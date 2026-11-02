@@ -82,7 +82,8 @@ bool other_str(){//判断其他变量名
 }
 bool cmpstr(int s){//判断是否为第s个关键词
   bool result=1;
-  for(int m=0;m<demo[s].size()&&j+m<data[indexd].size();m++){
+  int m=0;
+  for(;m<demo[s].size()&&j+m<data[indexd].size();m++){
       if(demo[s][m]!=data[indexd][j+m]){
 		result=0;
 		break;
